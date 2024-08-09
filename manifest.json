@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "name": "surfboard",
+  "version": "1.0",
+  "description": "Ctrl + C to copy, Ctrl + V to surf",
+  "permissions": [
+    "clipboardWrite",
+    "<all_urls>"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
